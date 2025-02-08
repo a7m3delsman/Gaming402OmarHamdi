@@ -1,0 +1,145 @@
+  /* إعدادات الخطوط والألوان */
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #9235e2, #f55110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:130vh;
+    margin: 0;
+}
+
+/* تصميم البطاقة */
+.profile-card {
+    margin-top: 30px;
+    width: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #9235e2, #f55110);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: 20px;
+    animation: pulse 5s infinite;
+}
+
+/* الجزء العلوي */
+.header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 60px 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+/* صورة الملف الشخصي */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* اسم المستخدم */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url("text_bg2.gif");
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+    font-size: 25px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 230, 199);
+
+    font-size: 18px;
+}
+
+/* المسمى الوظيفي */
+.job-title {
+    font-size: 17px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* أيقونات التواصل */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* الأزرار */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn {
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* تأثيرات الحركة */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
